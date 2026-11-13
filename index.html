@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerald's Portfolio</title>
+    <link rel="stylesheet" href="design_hero.css">
+</head>
+<body>
+    
+
+    <!-- Navigation bar -->
+    <nav>
+        <span class="text-logo">LAMBAN</span>
+
+        <ul class="navlinks">
+            <li><a href="#home" id="blue">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#achievements">Achievement</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    
+
+    <!-- Home section -->
+    <section class="banner" id="home">
+
+        <div class="left-side">
+            <div class="square">
+                <div class="hero">
+                    <h1>my name is,</h1>
+                </div>
+
+                <div class="name">
+                    <h1>Jerald</h1>
+                </div>
+
+                <div class="welcome">
+                    <p>Welcome to my personal portfolio.</p>
+                </div>
+            </div>
+
+            <a href="pic/resume.pdf" class="explore">Explore My Portfolio</a>
+        </div>
+
+        <div class="photo-background">
+            <img src="pic/pic1.png" class="photo" alt="My photo">
+        </div>
+    </section>
+        <!-- About section -->
+        <secion class="about-section" id="about">
+            <div class="about-picture">
+                <img src="pic/pic2.png" alt="My photo" class="about-photo">
+            </div>
+
+        <div class="about-box">
+            <h1> ABOUT ME</h1>
+
+        <p> Hi! My name is Jerald Lamban. i am a student who enjoys
+            learning new things and exploring different interests.
+            In my free time, I like to play online games, travel to
+            different places, and spend time doing things that I enjoy.
+            I am also interested in coding and technology. I enjoy learning
+            how programs work and creating things through code. Although
+            coding can sometimes be challenging, I see it as a good way to
+            improve my problem solving skills and learning something new.
+        </p>
+            </div>
+        </secion>
+    
+    
+    
+    <!-- Skills section -->
+    <section class="skills-section" id="skills">
+
+        <div class="skills-title">
+            <h1>SKILLS</h1>
+            
+        </div>
+
+        <div class="skills-container">
+
+        <!-- HTML -->
+            <div class="skill-box">
+                <img src="pic/html.png" alt="HTML Logo">
+                <p>I know a little bit of html</p>
+                
+            </div>
+            <!-- Python -->
+            <div class="skill-box">
+                <img src="pic/python.png" alt="Python Logo">
+                <p>I know a little bit of python</p>
+                
+            </div>
+            <!-- CSS -->
+            <div class="skill-box">
+                <img src="pic/css.png" alt="CSS Logo">
+                <p>I know a little bit of css</p>
+                
+            </div>
+        </div>
+    </section>  
+    
+    
+    
+    <!-- Achievements section -->
+<section class="achievement-section" id="achievements">
+
+    <div class="achievement-title">
+        <h1>ACHIEVEMENTS</h1>
+    </div>
+
+    <div class="carousel">
+
+        <!-- Previous button -->
+        <button class="arrow" id="prev">❮</button>
+
+        <!-- Achievement cards -->
+        <div class="achievement-container" id="achievementContainer">
+
+            <!-- First achievement -->
+            <div class="achievement-card">
+                <img src="pic/funrun.png" alt="Fun Run">
+
+                <p>First Fun Run I've participated</p>
+            </div>
+
+            <!-- Second achievement -->
+            <div class="achievement-card">
+                <img src="pic/immersion.png" alt="Work Immersion">
+
+                <p>A certificate for my work immersion</p>
+            </div>
+
+            <!-- Third achievement -->
+            <div class="achievement-card">
+                <img src="pic/graduation.png" alt="Graduation">
+
+                <p>Certificate for my senior high graduation</p>
+            </div>
+
+        </div>
+
+        <!-- Next button -->
+        <button class="arrow" id="next">❯</button>
+
+    </div>
+
+</section>
+    
+    <script>
+
+// Get the cards container
+const container = document.getElementById("achievementContainer");
+
+// Get the buttons
+const next = document.getElementById("next");
+const prev = document.getElementById("prev");
+
+// Move the first card to the end
+next.onclick = function() {
+    let firstCard = container.firstElementChild;
+
+    container.appendChild(firstCard);
+};
+
+// Move the last card to the beginning
+prev.onclick = function() {
+    let lastCard = container.lastElementChild;
+
+    container.prepend(lastCard);
+};
+
+</script>
+    
+    
+    
+<!-- Contact section -->
+<section class="contact-section" id="contact">
+
+    <div class="contact-title">
+        <h3>LET'S CONNECT</h3>
+        <h1>CONTACT <span>ME</span></h1>
+    </div>
+
+    <div class="contact-container">
+
+        <!-- Contact form -->
+        <div class="contact-form">
+
+            <form>
+                <div class="name-input">
+
+                    <div>
+                        <label>First Name</label>
+                        <input type="text" placeholder="ENTER YOUR FIRST NAME">
+                    </div>
+
+                    <div>
+                        <label>Last Name</label>
+                        <input type="text" placeholder="ENTER YOUR LAST NAME">
+                    </div>
+
+                </div>
+
+                <label>Email</label>
+                <input type="email" placeholder="ENTER YOUR EMAIL">
+
+                <label>Message</label>
+                <textarea placeholder="WRITE YOUR MESSAGE"></textarea>
+
+                <button type="submit">SEND</button>
+
+            </form>
+
+  </div>
+        
+        <div class="github-logo">
+    <a href="https://github.com/ElPatata2" target="_blank">
+        <img src="pic/github.svg.png" alt="GitHub">
+    </a>
+</div>
+        
+<!-- Contact information -->
+<div class="contact-info">
+
+    <!-- Email -->
+    <div class="info-box">
+        <div class="info-icon">
+            <img src="pic/email.png" alt="Email">
+        </div>
+        <div class="info-text">
+            <h3>EMAIL</h3>
+            <p>lambanjerald73@gmail.com</p>
+        </div>
+    </div>
+
+    <!-- Phone -->
+    <div class="info-box">
+        <div class="info-icon">
+            <img src="pic/phone.png" alt="Phone">
+        </div>
+        <div class="info-text">
+            <h3>PHONE</h3>
+            <p>09948919345</p>
+        </div>
+    </div>
+
+    <!-- Location -->
+    <div class="info-box">
+        <div class="info-icon">
+            <img src="pic/location.png" alt="Location">
+        </div>
+        <div class="info-text">
+            <h3>LOCATION</h3>
+            <p>Tambojangin, Amlan, Negros Oriental</p>
+        </div>
+    </div>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>@ 2026 Jerald Lamban. All Rights Reserved</p>
+</footer>
+
+    
+</body>
+</html>
